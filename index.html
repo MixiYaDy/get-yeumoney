@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Final Ma Code</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 5px;
+            width: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-group">
+            <label for="ref-url">REF_URL (required): </label>
+            <input type="text" id="ref-url" required>
+        </div>
+        <div class="input-group">
+            <label for="sub-ref-url">SUB_REF_URL (optional): </label>
+            <input type="text" id="sub-ref-url" placeholder="Leave blank for default value">
+        </div>
+        <button onclick="handleSubmit()">Get Code</button>
+        <div class="result">
+            <span id="code-result"></span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
