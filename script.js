@@ -1,5 +1,5 @@
-const BASE_URL = 'https://188.166.221.172/';
-const SUB_REF_URL = `${BASE_URL}soi-keo-dortmund-vs-real-madrid-02-06-2024/`;
+const REF_URL = 'https://188.166.221.172/';
+const SUB_REF_URL = `${REF_URL}soi-keo-dortmund-vs-real-madrid-02-06-2024/`;
 const GOOGLE_URL = 'https://www.google.com/';
 const TRAFFIC_URL = 'https://traffic-user.net/GET_VUATRAFFIC.php';
 const MA_URL = 'https://traffic-user.net/GET_MA.php';
@@ -50,6 +50,8 @@ const fetchInitialCodeXn = async () => {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
+            Referer: REF_URL,
+            Origin: REF_URL,
         },
         body: 'NO',
     });
@@ -70,6 +72,8 @@ const fetchTimerAndTraffic = async () => {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
+            Referer: REF_URL,
+            Origin: REF_URL,
         },
         body: formData,
     });
@@ -84,6 +88,8 @@ const fetchInitialMaCode = async () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
+                Referer: REF_URL,
+                Origin: REF_URL,
             },
         }
     );
@@ -99,6 +105,8 @@ const fetchSecondCodeXn = async () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
+                Referer: REF_URL,
+                Origin: REF_URL,
             },
             body: 'NO',
         }
@@ -118,6 +126,8 @@ const fetchFinalTrafficData = async () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
+                Referer: REF_URL,
+                Origin: REF_URL,
             },
         }
     );
@@ -135,6 +145,8 @@ const fetchFinalMaCode = async () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
+                Referer: REF_URL,
+                Origin: REF_URL,
             },
         }
     );
